@@ -1,26 +1,18 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# Technologies (and helpful documentation) Used:
+- [**Gatsby**](https://www.gatsbyjs.org/)
+  - [Gatsby Tutorials](https://www.gatsbyjs.org/tutorial/part-one/)
+  - [Zero to Depoy: A Practical Guide to Static Sites with Gatsby](https://scotch.io/tutorials/zero-to-deploy-a-practical-guide-to-static-sites-with-gatsbyjs)
+- **React**
+- **CSS**
+  - [variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
+  - [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [**Emotion**](https://emotion.sh/) (CSS-in-JS)
+  - [Gatsby using emotion example](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-emotion)
+  - [gatsby-plugin-emotion](https://www.gatsbyjs.org/packages/gatsby-plugin-emotion/)
+- **Fonts**
+  - [Google Fonts](https://fonts.google.com/)
+- **Tools/Software**
+  - [VS Code Insiders](https://code.visualstudio.com/insiders/)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
-
-## Install
-
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
-
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-gatsby develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+# Inspiration:
+  - Navbar: [Cole Waldrip on CodePen](https://codepen.io/colewaldrip/pen/KpRwgQ)
