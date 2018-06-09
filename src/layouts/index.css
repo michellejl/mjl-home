@@ -2,11 +2,24 @@
 
 :root {
   --font-color: #444;
+  --link-color: #888;
 }
 
 * {
   box-sizing: border-box;
   font-family: 'Rokkitt', cursive;
+  color: var(--font-color, #444);
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--link-color, #888);
+}
+
+a:hover {
   color: var(--font-color, #444);
 }
 

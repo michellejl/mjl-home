@@ -1,28 +1,55 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'react-emotion'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 const NavList = styled('ul')`
+  display: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flexbox;
-  justify-content: flex-end;
+  position: absolute;
+  background: white;
+  width: 100%;
+  @media (min-width: 770px) {
+    position: initial;
+    display: flexbox;
+    justify-content: space-between;
+    width: 80%;
+  }
   li {
-    padding: 0 0 0 40px;
     font-size: 18px;
+    text-align: center;
     a {
       text-decoration: none;
-      :hover {
-        font-weight: bold;
-      }
     }
   }
 `
 
+const Nav = styled('nav')`
+  .icon {
+    cursor: pointer;
+    margin: 0 45%;
+    width: 10%;
+  }
+  @media (min-width: 770px) {
+  display: flexbox;
+  justify-content: space-between;
+    .icon {
+      width: 0;
+      height: 0;
+    }
+  }
+`
+
+function handleMenuClick() {
+ alert('navigation toggled')
+}
+
 const NavBar = () => (
-  <nav>
-    <NavList>
+  <Nav>
+    <FontAwesomeIcon className='icon' icon={['fal', 'bars']} onClick={handleMenuClick}/>
+    <NavList className='navList'>
       <li>
         <Link to='/about'>/about</Link>
       </li>
@@ -39,7 +66,7 @@ const NavBar = () => (
         <Link to='/photo'>/photography</Link>
       </li>
     </NavList>
-  </nav>
+  </Nav>
 )
 
 export default NavBar

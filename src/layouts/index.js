@@ -3,13 +3,25 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'react-emotion'
 
+// Setting up Font Awesome Icons
+import fontawesome from '@fortawesome/fontawesome'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import brands from '@fortawesome/fontawesome-free-brands'
+import light from '@fortawesome/fontawesome-pro-light'
+
+fontawesome.library.add(brands, light)
+
 import Header from '../components/header'
 import './index.css'
 
 const Container = styled('div')`
   max-width: 1200px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  padding: 0;
+  @media (min-width: 770px) {
+    width: 80%;
+  }
 `
 
 const Layout = ({ children, data }) => (
