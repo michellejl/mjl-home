@@ -4,13 +4,18 @@ import styled from 'react-emotion'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 const NavList = styled('ul')`
-  display: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
   position: absolute;
   background: white;
   width: 100%;
+  &.open {
+    display: block;
+  }
+  &.close {
+    display: none;
+  }
   @media (min-width: 770px) {
     position: initial;
     display: flexbox;
@@ -42,14 +47,20 @@ const Nav = styled('nav')`
   }
 `
 
-function handleMenuClick() {
- alert('navigation toggled')
-}
-
-const NavBar = () => (
-  <Nav>
-    <FontAwesomeIcon className='icon' icon={['fal', 'bars']} onClick={handleMenuClick}/>
-    <NavList className='navList'>
+class NavBar extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      mobile: false,
+    }
+  }
+  render() {
+    let mobileClass = 'close'
+    this.state.mobile ? mobileClass = 'open' : mobileClass = 'close'
+    return (
+      <Nav>
+    <FontAwesomeIcon className='icon' icon={['fal', 'bars']} onClick={() => this.setState(this.state.mobile ? {mobile: false} : {mobile: true}) }/>
+    <NavList className={`navList ${mobileClass}`}>
       <li>
         <Link to='/about'>/about</Link>
       </li>
@@ -67,6 +78,8 @@ const NavBar = () => (
       </li>
     </NavList>
   </Nav>
-)
+    )
+  }
+}
 
 export default NavBar

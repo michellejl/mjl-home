@@ -15,6 +15,7 @@
   - [Google Fonts](https://fonts.google.com/)
   - [Font Awesome](https://fontawesome.com/)
     - [Font Awesome React Component](https://github.com/FortAwesome/react-fontawesome#build-a-library-to-reference-icons-throughout-your-app-more-conveniently)
+    - [Font Awesome Pro npm Setup](https://fontawesome.com/how-to-use/use-with-node-js#pro)
 - **Tools/Software**
   - [VS Code Insiders](https://code.visualstudio.com/insiders/)
 
@@ -48,8 +49,10 @@
 
 
 
-# Dev Environment Versions:
-- Node v10.4.0
+# Dev Setup:
+- Project was built using: Node v10.4.0
+- In order to use the Pro version of FontAwesome follow steps [here](https://fontawesome.com/how-to-use/use-with-node-js#pro) before running npm install. Or setup the .```.npmrc``` file as suggested. 
+
 
 
 # Files
@@ -65,6 +68,9 @@
     - 404.js
     - index.js
     - page-2.js
+- .npmrc --> sets up fontawesome token so I can use my pro licence (not included on github)
+- gatsby-config.js --> Sets up plugins with any configuration information needed
+- gatsby-node.js
 
 
 <!-- # Inspiration:
