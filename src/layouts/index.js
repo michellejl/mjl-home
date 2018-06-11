@@ -12,9 +12,10 @@ import light from '@fortawesome/fontawesome-pro-light'
 fontawesome.library.add(brands, light)
 
 import Header from '../components/header'
+import Footer from '../components/footer'
 import './index.css'
 
-const Container = styled('div')`
+const FullPageContainer = styled('div')`
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -22,6 +23,10 @@ const Container = styled('div')`
   @media (min-width: 770px) {
     width: 80%;
   }
+`
+
+const ContentContainer = styled('main')`
+  margin: 0 10px;
 `
 
 const Layout = ({ children, data }) => (
@@ -34,10 +39,13 @@ const Layout = ({ children, data }) => (
       ]}
     />
 
-    <Container>
+    <FullPageContainer>
       <Header siteTitle={data.site.siteMetadata.title} />
-      {children()}
-    </Container>
+      <ContentContainer>
+        {children()}
+      </ContentContainer>
+      <Footer />
+    </FullPageContainer>
   </div>
 )
 

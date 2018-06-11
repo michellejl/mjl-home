@@ -18,6 +18,8 @@
     - [Font Awesome Pro npm Setup](https://fontawesome.com/how-to-use/use-with-node-js#pro)
 - **Tools/Software**
   - [VS Code Insiders](https://code.visualstudio.com/insiders/)
+  - git / github
+    - [Atlassian git merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
 
 ## Gatsby Plugins in use:
 - **gatsby-transformer-remark** : 
@@ -61,6 +63,8 @@
     - *.md --> markdown files of blog posts
   - **components**
     - header.js
+    - nav-bar.js
+    - footer.js
   - **layouts**
     - index.css
     - index.js

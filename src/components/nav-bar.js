@@ -18,7 +18,7 @@ const NavList = styled('ul')`
   }
   @media (min-width: 770px) {
     position: initial;
-    display: flexbox;
+    display: flexbox !important;
     justify-content: space-between;
     width: 80%;
   }
