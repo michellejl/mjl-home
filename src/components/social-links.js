@@ -19,8 +19,14 @@ list-style-type: none;
   }
 `
 
+const FlexItem = styled('div')`
+  @media (min-width: 500px) {
+    text-align: left;
+  }
+`
+
 const Social =  () => (
-  <div>
+  <FlexItem>
     <Title>Around the Interwebs</Title>
     <SocialList>
       <li>
@@ -48,7 +54,7 @@ const Social =  () => (
         </a>
       </li>
     </SocialList>
-  </div>
+  </FlexItem>
 )
 
 export default Social

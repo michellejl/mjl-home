@@ -19,9 +19,14 @@ const LinksList = styled('ul')`
     height: 12px;
   }
 `
+const FlexItem = styled('div')`
+  @media (min-width: 500px) {
+    text-align: right;
+  }
+`
 
 const ExtraLinks =  () => (
-  <div>
+  <FlexItem>
     <Title>More Links</Title>
     <LinksList>
       <li>
@@ -49,7 +54,7 @@ const ExtraLinks =  () => (
         </Link>
       </li>
     </LinksList>
-  </div>
+  </FlexItem>
 )
 
 export default ExtraLinks
