@@ -27,6 +27,9 @@ const FullPageContainer = styled('div')`
 
 const ContentContainer = styled('main')`
   margin: 0 10px;
+  @media (min-width: 770px) {
+    margin: 0;
+  }
 `
 
 const Layout = ({ children, data }) => (

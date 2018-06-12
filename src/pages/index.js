@@ -1,12 +1,21 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'react-emotion'
+
+import UserCard from '../components/user-card'
+
+const SideBar = styled('aside')`
+  display: none;
+  @media (min-width: 1000px) {
+    display: block;
+  }
+`
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SideBar>
+      <UserCard />
+    </SideBar>
   </div>
 )
 
