@@ -4,6 +4,7 @@ import styled from 'react-emotion'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 const NavList = styled('ul')`
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.49);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -17,6 +18,7 @@ const NavList = styled('ul')`
     display: none;
   }
   @media (min-width: 770px) {
+    box-shadow: initial;
     position: initial;
     display: flexbox !important;
     justify-content: space-between;

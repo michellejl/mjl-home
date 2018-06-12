@@ -20,6 +20,7 @@
   - [VS Code Insiders](https://code.visualstudio.com/insiders/)
   - git / github
     - [Atlassian git merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
+    - [Git Tower: Delete Remote Branch](https://www.git-tower.com/learn/git/faq/delete-remote-branch)
 
 ## Gatsby Plugins in use:
 - **gatsby-transformer-remark** : 
