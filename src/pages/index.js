@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'react-emotion'
 
 import UserCard from '../components/user-card'
+import ProjectCardSimple from '../components/project-card-simple'
 
 const PageContainer = styled('div')`
   margin-top: 25px;
@@ -27,13 +28,18 @@ const Intro = styled('p')`
 
 const SlashSection = styled('section')`
   margin: 10px 0;
-  h3 {
+  h2 {
     margin: 0;
     .subTitle {
       color: #888;
       font-weight: normal;
     }
   }
+`
+
+const ProjectCardBox = styled('div')`
+  display: flex;
+  justify-content: space-between;
 `
 
 const IndexPage = () => (
@@ -46,7 +52,17 @@ const IndexPage = () => (
         Hello World! I’m Michelle. I’m a front-end developer and prototyper currently contracting in Portland, Oregon. I’m also an artist, designer, <Link to="/photo">photographer</Link>, <Link to="/about">blogger</Link>, mentor, <Link to="/community">community leader</Link>, volunteer, and dog lover.
       </Intro>
       <SlashSection>
-        <h3>/now : <span className="subTitle">Currently I’m working on a few different projects including </span></h3>
+        <h2>
+          /now : 
+          <span className="subTitle">
+            Currently I’m working on a few different projects including 
+          </span>
+        </h2>
+        <ProjectCardBox>
+          <ProjectCardSimple />
+          <ProjectCardSimple />
+          <ProjectCardSimple />
+        </ProjectCardBox>
       </SlashSection>
     </main>
   </PageContainer>
