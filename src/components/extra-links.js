@@ -38,7 +38,7 @@ const ExtraLinks =  () => (
       <li>
         <Link to='/now'>
           <FontAwesomeIcon className='icon' icon={['fal', 'clock']} />
-          /uses
+          /now
         </Link>
       </li>
       <li>
