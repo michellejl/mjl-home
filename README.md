@@ -1,3 +1,18 @@
+# Dev Setup:
+- Project was built using: Node v10.4.0
+- In order to use the Pro version of FontAwesome follow steps [here](https://fontawesome.com/how-to-use/use-with-node-js#pro) before running npm install. Or setup the .```.npmrc``` file as suggested. 
+
+## Run in Development mode:
+```
+$ gatsby develop
+```
+
+## Build a production version:
+```
+$ gastby build
+```
+
+
 # Technologies Used:
 
 ## General
@@ -49,13 +64,6 @@
   }
 
   ``` 
-
-
-
-# Dev Setup:
-- Project was built using: Node v10.4.0
-- In order to use the Pro version of FontAwesome follow steps [here](https://fontawesome.com/how-to-use/use-with-node-js#pro) before running npm install. Or setup the .```.npmrc``` file as suggested. 
-
 
 
 # Files
