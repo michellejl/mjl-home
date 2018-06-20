@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'react-emotion'
 
 import UserCard from '../components/user-card'
+import SingleTweet from '../components/twitter-single';
 
 const PageContainer = styled('div')`
   margin-top: 25px;
@@ -47,6 +48,10 @@ const IndexPage = () => (
       </Intro>
       <SlashSection>
         <h3>/now : <span className="subTitle">Currently I’m working on a few different projects including </span></h3>
+      </SlashSection>
+      <SlashSection>
+        <h3>/twitter : <span className="subTitle">Recently I shared on Twitter </span></h3>
+        <SingleTweet />
       </SlashSection>
     </main>
   </PageContainer>

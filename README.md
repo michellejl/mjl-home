@@ -49,6 +49,11 @@ $ gastby build
 - ```createNodeField``` --> this function adds the slug as a field to each file node, that can then be queried with GraphQL.
 - ```createPages``` --> 
 
+## Twitter API
+- [Developer Docs](https://developer.twitter.com/en/docs.html)
+- [API Reference](https://developer.twitter.com/en/docs/api-reference-index)
+- [How to Add Twitter Buttons to a Gatsby Site](https://www.stevenmercatante.com/how-to-add-twitter-buttons-to-a-gatsby-site/)
+
 ## GraphQL Things
 - Gatsby comes with GraphQL by default, and GraphQL comes with a handy tool called GraphiQL, which is visible at [http://localhost:8000/___graphql](http://localhost:8000/___graphql)
 - This query will return all files inside of ```/src/``` (as specified in ```gatsby-config.js```)

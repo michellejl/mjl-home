@@ -22,3 +22,18 @@ a {
 a:hover {
   color: var(--font-color, #444);
 }
+
+.preload-short-text {
+  display: inline-block;
+  height: 16px;
+  width: 100px;
+  background: #aaa;
+  margin: 0 5px;
+}
+
+.preload-sentence-text {
+  height: 48px;
+  width: calc(100% - 5px);
+  background: #aaa;
+  margin: 0 0 0 5px;
+}
