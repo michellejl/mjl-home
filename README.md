@@ -54,7 +54,20 @@
 
 # Dev Setup:
 - Project was built using: Node v10.4.0
-- In order to use the Pro version of FontAwesome follow steps [here](https://fontawesome.com/how-to-use/use-with-node-js#pro) before running npm install. Or setup the .```.npmrc``` file as suggested. 
+- In order to use the Pro version of FontAwesome follow steps [here](https://fontawesome.com/how-to-use/use-with-node-js#pro) (or below) before running npm install. Or setup the ```.npmrc``` file as suggested. 
+  ```
+  $ npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+  $ npm config set "//npm.fontawesome.com/:_authToken" TOKEN
+  ```
+- Install gatsby globally
+  ```
+  npm install --global gatsby-cl
+  ```
+- To run the Dev Environment use 
+  ```
+  gatsby develop
+  ```
+
 
 
 
